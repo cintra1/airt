@@ -15,7 +15,7 @@
 	<body class="demo-1 loading">
 		<header>
 			<p href="#" class="logo">Airt</p>
-			<div class="toggle" onclick="toggleMenu()"></div>
+			
 			<ul class="menu">
 			  <li><a href="#">&#129053;</a></li>
 			</ul>
@@ -97,12 +97,6 @@
 			  const header = document.querySelector('header')
 			  header.classList.toggle("sticky", window.scrollY > 0)
 			})
-			function toggleMenu() {
-			  const toggle = document.querySelector('.toggle')
-			  const menu = document.querySelector('.menu')
-			  toggle.classList.toggle('active')
-			  menu.classList.toggle('active')
-			}
 		  </script>
 	</body>
 </html>
