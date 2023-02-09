@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Airt</title>
+		<meta name="description" content="A set of ideas of animating images and other elements while smooth scrolling a page." />
+		<meta name="keywords" content="smooth scrolling, animation, scroll, website, images, web development, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/dec4mzz.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-1 loading">
+		<header>
+			<p href="#" class="logo">Airt</p>
+			<div class="toggle" onclick="toggleMenu()"></div>
+			<ul class="menu">
+			  <li><a href="#">&#129053;</a></li>
+			</ul>
+		  </header>
+		<main>
+			<div data-scroll class="page page--layout-2">
+				<section class="banner">
+					<div class="textBx" id="home">
+					  <h2>Visual Experience<br><span>by cintra</span></h2>
+					  <h3>scroll and have fun</h3>
+					</div>
+				  </section>
+				<div class="content content--full content--alternate">
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">01</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/1.png);"></div></div>
+						<div class="content__item-deco"></div>
+						<h2 class="content__item-title">Gritt</h2>
+						<p class="content__item-description">eva and apples.</p>
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">02</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/2.png);"></div></div>
+						<div class="content__item-deco"></div>
+						<h2 class="content__item-title">Celli</h2>
+						<p class="content__item-description">a man.</p>
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">07</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/9.png);"></div></div>
+						<div class="content__item-deco"></div>
+						<h2 class="content__item-title">Nari</h2>
+						<p class="content__item-description">band.</p>
+					</div>
+					
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">04</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/4.png);"></div></div>
+						<div class="content__item-deco"></div>
+						<h2 class="content__item-title">lí</h2>
+						<p class="content__item-description">moon.</p>
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">05</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/8.png);"></div></div>
+						<div class="content__item-deco"></div>
+						<h2 class="content__item-title">Fati</h2>
+						<p class="content__item-description">ilusion.</p>
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">06</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/3.png);"></div></div>
+						<div class="content__item-deco"></div>
+						<h2 class="content__item-title">Olpi</h2>
+						<p class="content__item-description">hat.</p>
+					</div><div class="content__item content__item--wide">
+						<span class="content__item-number">03</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/6.png);"></div></div>
+						<div class="content__item-deco"></div>
+						<h2 class="content__item-title">Et</h2>
+						<p class="content__item-description">owl.</p>
+					</div>
+					
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">08</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/5.png);"></div></div>
+						<div class="content__item-deco"></div>
+						<h2 class="content__item-title">Nci</h2>
+						<p class="content__item-description">heaven.</p>
+					</div>
+					<p class="credits" id="final">if you like,  <a href="https://www.instagram.com/mateus_cintr/">tell me</a></p>
+				</div>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script>
+			window.addEventListener('scroll', function () {
+			  const header = document.querySelector('header')
+			  header.classList.toggle("sticky", window.scrollY > 0)
+			})
+			function toggleMenu() {
+			  const toggle = document.querySelector('.toggle')
+			  const menu = document.querySelector('.menu')
+			  toggle.classList.toggle('active')
+			  menu.classList.toggle('active')
+			}
+		  </script>
+	</body>
+</html>
